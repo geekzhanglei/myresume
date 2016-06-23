@@ -1,0 +1,95 @@
+/*introduction animation*/
+
+/*back to home*/
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg); 	/* IE 9 */
+		-moz-transform: rotate(0deg); 	/* Firefox */
+		-webkit-transform: rotate(0deg); /* Safari 和 Chrome */
+		-o-transform: rotate(0deg); 	/* Opera */
+	}
+	to {
+		transform: rotate(360deg);
+		-ms-transform: rotate(360deg); 	/* IE 9 */
+		-moz-transform: rotate(360deg); 	/* Firefox */
+		-webkit-transform: rotate(360deg); /* Safari 和 Chrome */
+		-o-transform: rotate(360deg); 	/* Opera */
+	}
+}
+
+/*page2 effect*/
+.fadeInLeft {
+	animation: fadeInLeft 0.6s ease-in-out;
+	-webkit-animation: fadeInLeft 0.6s ease-in-out;
+	opacity: 1 !important;
+}
+.fadeInRight {
+	animation: fadeInRight 0.6s ease-in-out;
+	-webkit-	animation: fadeInRight 0.6s ease-in-out;
+	opacity: 1 !important;
+}
+@keyframes fadeInLeft {
+	0% {
+		opacity: 0;
+		transform: translate(-100px, 0) rotate(0deg);
+		-ms-transform: translate(-100px, 0) rotate(0deg); 	/* IE 9 */
+		-moz-transform: translate(-100px, 0) rotate(0deg); 	/* Firefox */
+		-webkit-transform: translate(-100px, 0) rotate(0deg); /* Safari 和 Chrome */
+		-o-transform: translate(-100px, 0) rotate(0deg); 	/* Opera */
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0) rotate(360deg);
+		-ms-transform: translate(0, 0) rotate(360deg); 	/* IE 9 */
+		-moz-transform: translate(0, 0) rotate(360deg); 	/* Firefox */
+		-webkit-transform: translate(0, 0) rotate(360deg); /* Safari 和 Chrome */
+		-o-transform: translate(0, 0) rotate(360deg); 	/* Opera */
+	}
+}
+}
+@keyframes fadeInRight {
+0% {
+	opacity: 0;
+	transform: translate(400px, 0);
+	-ms-transform: translate(400px, 0); 	/* IE 9 */
+	-moz-transform: translate(400px, 0); 	/* Firefox */
+	-webkit-transform: translate(400px, 0); /* Safari 和 Chrome */
+	-o-transform: translate(400px, 0); 	/* Opera */
+}
+100% {
+	opacity: 1;
+	transform: translate(0px, 0);
+	-ms-transform: translate(0px, 0); 	/* IE 9 */
+	-moz-transform: translate(0px, 0); 	/* Firefox */
+	-webkit-transform: translate(0px, 0); /* Safari 和 Chrome */
+	-o-transform: translate(0px, 0); 	/* Opera */
+}
+}
+
+/* page3 effect */
+.animatePage3 {
+animation: animatePage3 0.3s ease-in forwards;
+-webkit-animation: animatePage3 0.3s ease-in forwards;
+}
+@keyframes animatePage3 {
+0% {
+	opacity: 0;
+	transform: translate(0, -80px) rotateX(0);
+	-ms-transform: translate(0, -80px) rotateX(0); 	/* IE 9 */
+	-moz-transform: translate(0, -80px) rotateX(0); 	/* Firefox */
+	-webkit-transform: translate(0, -80px) rotateX(0); /* Safari 和 Chrome */
+	-o-transform: translate(0, -80px) rotateX(0); 	/* Opera */
+}
+40% {
+	opacity: .8;
+}
+100% {
+	opacity: 1;
+	transform: translate(0, 0)  rotateX(30deg);
+	-ms-transform: translate(0, 0)  rotateX(30deg);	/* IE 9 */
+	-moz-transform: translate(0, 0)  rotateX(30deg);	/* Firefox */
+	-webkit-transform: translate(0, 0)  rotateX(30deg);/* Safari 和 Chrome */
+	-o-transform: translate(0, 0)  rotateX(30deg);	/* Opera */
+}
+}

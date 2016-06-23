@@ -1,0 +1,439 @@
+html {
+	height: 100%;
+}
+body {
+/*	background: #2980b9;*/
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	line-height: 1;
+	overflow: hidden;
+	font: normal 14px "helvetica neue", tahoma, "microsoft yahei";	
+	/*box-sizing设置盒模型的定义方式，border-box指元素
+	border和padding在宽高内绘制；content-box之外绘制，为标准模式*/
+	/*box-sizing: border-box;*/
+}
+.header {
+	width: 100%;
+	height: 160px;
+	position: fixed;
+	top: 0px;
+	z-index: 100;
+}
+.nav-bg-init { 
+	width: 100%;
+	height:100px;
+	position: fixed;
+	background: black;
+	transform: scale(0,1);
+	transition: all 0.6s;
+	-moz-transition: all 0.6s; /* Firefox 4 */
+	-webkit-transition: all 0.6s; /* Safari 和 Chrome */
+	-o-transition: all 0.6s; /* Opera */
+}
+.nav-bg-effect {
+	transform: scale(1);
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */	
+}
+.nav-toTop ul li[class=label] {
+	margin-top: -1%;
+	transform: scale(0.8);
+	transition: all 0.6s;
+	-moz-transition: all 0.6s; /* Firefox 4 */
+	-webkit-transition: all 0.6s; /* Safari 和 Chrome */
+	-o-transition: all 0.6s; /* Opera */
+}
+.nav ul{
+	margin:0 auto;
+	padding: 0;
+	width:80%;
+	list-style: none;
+	display: block;
+}
+.nav li{
+	float:left;
+	font-size: 30px;
+	display: inline-block;
+	width:20%;
+	text-align: center;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */	
+	transform:scale(1);
+}
+nav a {
+	position: relative;
+	font-size: 30px;
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    display: block;
+    padding: 60px 0px;
+    transition: all 0.4s ease-in;
+	-moz-transition: all 0.4s ease-in; /* Firefox 4 */
+	-webkit-transition: all 0.4s ease-in; /* Safari 和 Chrome */
+	-o-transition: all 0.4s ease-in; /* Opera */    
+}
+.nav a:hover,a:visited,a:focus {
+	text-decoration: none;
+}
+.nav li:nth-child(1) a:hover,.nav_shade2 {
+	color:#C0392B;
+}
+.nav li:nth-child(2) a:hover,.nav_shade3 {
+	color:#E67E22 ;
+}
+.nav li:nth-child(4) a:hover,.nav_shade4 {
+	color:#16A085 ;
+}
+.nav li:nth-child(5) a:hover,.nav_shade5 {
+	color:#9B59B6 ;
+}
+.toHome {
+	width:120px;
+	height:120px;
+	margin:0 auto;
+	position: relative;
+	top:20px;
+}
+.toHome img {
+	border-radius: 50%;
+	/*水平垂直居中*/
+	position: absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom: 0px;
+	margin:auto;
+}
+.toHome span {
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	display: block;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin:auto;
+	border:5px solid white;
+	/*负的缩进，隐藏文字，为SEO*/
+	text-indent:-9999px;  
+	animation:spin 1s  infinite linear; 
+	transition:all 1s;
+	-moz-transition: all 1s; /* Firefox 4 */
+	-webkit-transition: all 1s; /* Safari 和 Chrome */
+	-o-transition: all 1s; /* Opera */		
+
+}
+.toHome span:hover {
+	border-top: 5px solid #16A085;
+    border-right: 5px solid #E67E22;
+    border-bottom: 5px solid #C0392B;
+    border-left: 5px solid #9B59B6;
+}
+.next-button {
+	width: 80px;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgba(0,0,0,.3);
+    z-index: 500;
+	position: fixed;
+	left:0;
+	right:0;
+	margin:0 auto;
+	bottom:10px;
+	cursor:pointer;
+}
+.next-button:hover {
+	opacity: .6;
+}
+.go_top {
+	position: fixed;
+	margin:auto;
+	right: -100px;
+	bottom: 10px;
+	width: 80px;
+	height: 80px;
+	z-index: 500;
+	font-size: 40px;
+	color: rgba(255,255,255,1);
+	background: rgba(0,0,0,.3);
+	border-radius: 5px;
+	text-align: center;
+	line-height: 80px;
+	cursor: pointer;
+}
+.go_top:hover {
+	opacity: .6;
+}
+/*pages*/
+.page {
+	background: #2980b9;
+	width:100%;
+	/*这里高度应该是百分百，js实现*/
+	height:600px;
+	margin:0 auto;
+	position:relative;
+}
+.page .wrap {
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+    perspective: 2000px;
+    -webkit-perspective:2000px;
+}
+.page1 div {
+	height: 250px;
+}
+.page2 div {
+	height: 200px;
+}
+.page1 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 90px;
+}
+/*page2*/
+.page2 {
+    position: relative;
+    background: #eee;
+}
+.page2 ul {	
+	list-style: none;
+	padding:0;
+	position: relative;
+	left:25%;
+}
+.page2 li span {
+	display:inline-block;
+	color: black;
+	font-weight: bold;
+    line-height: 60px;
+    font-size: 30px;
+    opacity:0;
+    transition:all ease-in 1s;
+	-moz-transition: all ease-in 1s; /* Firefox 4 */
+	-webkit-transition: all ease-in 1s; /* Safari 和 Chrome */
+	-o-transition: all ease-in 1s; /* Opera */	    
+}
+.page2 li i {
+    color: #009966;
+    font-size: 40px;
+    margin:0 20px;
+    opacity: 0;
+    transition:all ease-in 1s;
+	-moz-transition: all ease-in 1s; /* Firefox 4 */
+	-webkit-transition: all ease-in 1s; /* Safari 和 Chrome */
+	-o-transition: all ease-in 1s; /* Opera */	
+}
+/*page3*/
+.page3 {
+    position: relative;
+    background: #339966;
+}
+.page3 .wrap {
+    position: absolute;
+    top: 120px;
+    width: 80%;
+    height: 80%;
+}
+.page3 h1 {
+	width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.page3 .left {
+	float:left;
+	width:58%;
+	position: relative;
+}
+.page3 .left img {
+	width:100%;
+}
+.page3 .right img {
+	width:100%;
+}
+.page3 .right {
+	float:right;
+	width:42%;
+	height: 80%;
+}
+.page3 .right ul {
+	list-style: none;
+	padding: 0;
+	height: 100%;
+}
+.page3 .right li {
+	float:right;
+    margin-bottom: 2em;
+	width:75%;
+	position: relative;
+}
+.page3 .item {
+    /*display: inline-block;*/
+    overflow: hidden !important;
+    transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in; /* Firefox 4 */
+	-webkit-transition: all .5s ease-in; /* Safari 和 Chrome */
+	-o-transition: all .5s ease-in; /* Opera */	
+    transform:rotateX(30deg);
+    transform-origin:50% 20%;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0,.55);
+    opacity: 0;
+}
+.page3 .left:hover div:last-child{
+	transform:translateY(-73%);
+}
+.page3 .right .item:hover .cont1 {
+	transform:translateY(-71%);
+}
+.page3 .right .item:hover .cont2 {
+	transform:translateY(-71.5%);
+}
+.page3 .content {
+    font-size: 16px;
+	position: absolute;
+	height: 100%;
+	padding:20px;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    width: 100%;
+    margin-top: -17%;
+    z-index: 99;
+    transform-origin:50% 20%;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in;
+    -moz-transition: all .5s ease-in; /* Firefox 4 */
+	-webkit-transition: all .5s ease-in; /* Safari 和 Chrome */
+	-o-transition: all .5s ease-in; /* Opera */	    
+    /*transform: translate(0%,0%);*/
+    cursor: pointer;
+}
+.page3 .content span {
+    margin: 1em;
+    display: block;
+}
+.page3 .content span:first-child {
+	font-size: 22px;
+    font-weight: 600;
+	margin: 0.5em 0 2em 16px;
+}
+.page3 .content .text {
+	list-style: none;
+	padding: 0;
+	margin: 1em 1em 1em 2em;
+}
+.page3 .content li {
+	line-height: 30px;
+}
+.page3 .right .content {
+	padding: 5px;
+	margin-top: -15%;
+}
+.page3 .right .content span {
+	margin: 0.2em;
+    margin-left: 1em;
+}
+.page3 .right .content span:first-child {
+	font-size: 20px;
+    margin: 0.4em 0 0.6em 16px;
+}
+.page3 .right .content .text {
+	margin:0;
+}
+.page3 .right .content .text li {
+    line-height: 25px;
+    margin: 0;
+}
+/*page4*/
+.page4 {
+    position: relative;
+    color:white;
+}
+.page4 div:first-child {
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    right: 0px;
+    bottom:initial;
+    margin: auto;
+}
+.page4 ul {
+	list-style: none;
+	padding: 0;
+}
+.page4 ul li {
+    font-size: 16px;
+    line-height: 40px;
+}
+.page4 h1 {
+	font-size: 2em;
+	font-weight: 800;
+    margin: 0.67em 0;
+}
+
+/*page5*/
+.page5 {
+    position: relative;
+    background:#CC3333;
+    color:white;
+}
+.page5 div:first-child {
+	position: absolute;
+	bottom:initial;
+	top:150px;
+	margin:0 auto;
+}
+.page5 div>div:nth-child(2) {
+	position:relative;
+	top:15px;
+}
+.page5 ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20px;
+}
+.page5 ul li {
+    font-size: 16px;
+    line-height: 38px;
+}
+.page5 h1 {
+	font-size: 2em;
+	font-weight: 800;
+    margin: 0.67em 0;
+}
+.page5 h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+    margin: 0.67em 0;
+}
+.page5 a {
+	text-decoration: none;
+	color:white;
+}
+.page5 a:hover {
+	font-weight: bold;
+	color:blue;
+}
+.page5 .weixin {
+	width:170px;
+}

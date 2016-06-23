@@ -1,1 +1,127 @@
-<p style="color:blue">hello</p>
+<div class="header">
+	<div class="nav-bg-init"></div>
+	<nav class="nav">
+		<ul class="clearfix">
+			<li class="label"><a href="javascript:void(0)" value="2" ng-click="jump(2)">关于</a></li>
+			<li class="label"><a href="javascript:void(0)" value="3" ng-click="jump(3)">作品</a></li>
+			<li>
+				<a class="toHome" href="javascript:void(0)" ng-click="jump(1)">
+					<img src="/images/logo.jpg"alt="logo is gone">
+					<span>首页</span>
+				</a>
+			</li>
+			<li class="label"><a href="javascript:void(0)" value="4" ng-click="jump(4)">能力</a></li>
+			<li class="label"><a href="javascript:void(0)" value="5" ng-click="jump(5)">联系</a></li>
+		</ul>
+	</nav>
+</div>
+<div class="next-button" ng-click="nextPage()"><span class="fa fa-angle-double-down fa-lg"></span></div>
+<div class="go_top" style="right: -100px;" ng-click="jump(1)"><span class="fa fa-arrow-circle-up"></span></div>
+<div class="page page1" adaptive-height>
+	<div class="wrap">
+		<p>Hi，这是一个测试页</p>
+		<p>仿自Fintan博客个人页</p>
+		<p>了解更多，向下滚动哦</p>
+	</div>
+</div>
+<div class="page page2" adpaptive-height>
+	<div class="wrap">
+		<ul>
+			<li>
+				<i class="fa fa-fw fa-github "></i>
+				<span>我是一名前端爱好者</span>
+			</li>
+			<li>
+				<i class="fa fa-fw fa-graduation-cap "></i>
+				<span>目前帝都研二在读</span>
+			</li>
+			<li>
+				<i class="fa fa-fw fa-paper-plane "></i>
+				<span>有志成为一名前端攻城狮</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="page page3" adpaptive-height>
+	<div class="wrap">
+		<h1>我的作品</h1>
+		<div class="left item animatePage3">
+			<div>
+				<img src="/images/web.jpg" alt="font end for web-demo">
+			</div>
+			<div class="content" ng-click="jumpToDemo(1)">
+				<span>九章云极公司官网</span>
+				<span><b>开发时间：</b>2015年9月</span>
+				<span><b>工作内容：</b>官网开发</span>
+				<span><b>主要工作：</b>90%的官网开发工作</span>
+				<ul class="text">
+					<li><i class="fa  fa-hand-o-right"></i> 视觉稿还原，将设计师提供的PSD文件实现为静态页面</li>
+					<li><i class="fa  fa-hand-o-right"></i> 网页js动态效果设计与实现</li>
+					<li><i class="fa  fa-hand-o-right"></i> 与中间件工程师对接口完成表单交互功能</li>
+				</ul>
+			</div>			
+		</div>
+		<div class="right">
+			<ul>
+				<li class="item animatePage3">
+					<div>
+						<img src="/images/datacanvas.jpg" alt="font end for datacanvas">
+					</div>
+					<div class="content cont1"  ng-click="jumpToDemo(1)">
+						<span>九章云极公司大数据平台</span>
+						<span><b>开发时间：</b>2016年1月</span>
+						<span><b>工作内容：</b>大数据可视化</span>
+						<span><b>主要工作：</b>datacanvas平台开发</span>
+						<ul class="text">
+							<li><i class="fa  fa-hand-o-right"></i>大数据平台datacanvas开发</li>
+							<li><i class="fa  fa-hand-o-right"></i>使用angular,bootstrap,jquery</li>
+						</ul>						
+					</div>
+				</li>
+				<li class="item animatePage3">
+					<div>
+						<img src="/images/h3c.jpg" alt="h3c image">
+					</div>
+					<div class="content cont2" ng-click="jumpToDemo(2)">
+						<span>华三通信技术公司</span>
+						<span><b>开发时间：</b>2015年4月</span>
+						<span><b>工作内容：</b>C语言开发</span>
+						<span><b>主要工作：</b>网络协议编程</span>
+						<ul class="text">
+							<li><i class="fa  fa-hand-o-right"></i>交换机新增shell指令开发</li>
+							<li><i class="fa  fa-hand-o-right"></i>PE支持堆叠项目实践</li>
+						</ul>								
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="page page4" adpaptive-height>
+	<div class="wrap">
+		<h1>主要技能</h1>
+		<ul>
+			<li class="flashFadeInRight">熟练掌握语义化的 HTML 和具有兼容性的 CSS ，能熟练手写符合 W3C 标准的结构和代码。</li>
+			<li class="flashFadeInRight">熟悉javascript与jQuery实现日常需要的交互效果</li>
+			<li class="flashFadeInRight">熟悉 bootstrap基本知识</li>
+			<li class="flashFadeInRight">了解angularjs1.x并能搭建基本框架</li>
+			<li class="flashFadeInRight">熟悉后端语言C及基本数据结构算法</li>
+			<li class="flashFadeInRight">熟悉nginx、apache、git、svn等工程化工具</li>
+			<li class="flashFadeInRight">喜欢接触新事物，有一定的自学能力</li>
+		</ul>
+	</div>
+</div>
+<div class="page page5" adpaptive-height>
+	<div class="wrap">
+		<h1>联系本人</h1>
+		<div>
+			<h2>社交网络</h2>
+			<ul>
+				<li><i class="fa fa-envelope-o"></i> 邮箱：<a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=WjQ1Ljs2MS41KDs4ODMuGisrdDk1Nw" style="text-decoration:none;"><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_02.png"/></a></li>
+				<li><i class="fa fa-qq fa-sm"></i> Q Q：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=41572876&site=qq&menu=yes">41572876</a></li>
+				<li><i class="fa fa-weibo"></i> 微博：<a target="_blank" href="http://weibo.com/u/5671859298?is_all=1">别跟兔子说话</a></li>
+				<li><i class="fa fa-wechat"></i> 微信：<br><img class="weixin" src="/images/wechat.jpg" alt="QR Code"></li>
+			</ul>
+		</div>
+	</div>
+</div>

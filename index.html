@@ -9,18 +9,21 @@
 		<meta name="description" content="zl的个人空间">
 		<!-- build css pkg -->
 		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/node_modules/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="/css/intro.css">
+		<link rel="stylesheet" href="/css/myanimate.css">
 		<link rel="stylesheet" href="/css/response.css">
 		<!-- endbuild -->
 	</head>
 	<body>
 		<div ng-controller="IntroCtrl">
+			<!-- 以下一行有单引号 -->
 			<ng-include src="'html/introduction.html'"></ng-include>
 		</div>
 		<!-- build js pkg-->
-		<script src="/node_modules/angular/angular.min.js"></script>
 		<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="/node_modules/angular/angular.min.js"></script>
 	    <script src="/js/app.js"></script>
 	    <script src="/js/introCtrl.js"></script>
 	    <script src="/js/directive.js"></script>
