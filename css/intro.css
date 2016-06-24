@@ -346,7 +346,7 @@ nav a {
 	line-height: 30px;
 }
 .page3 .right .content {
-	padding: 5px;
+	padding: 10px;
 	margin-top: -15%;
 }
 .page3 .right .content span {
@@ -354,7 +354,7 @@ nav a {
     margin-left: 1em;
 }
 .page3 .right .content span:first-child {
-	font-size: 20px;
+	font-size: 1.5em;
     margin: 0.4em 0 0.6em 16px;
 }
 .page3 .right .content .text {
@@ -435,5 +435,5 @@ nav a {
 	color:blue;
 }
 .page5 .weixin {
-	width:170px;
+	width:17%;
 }

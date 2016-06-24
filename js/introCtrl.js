@@ -2,6 +2,13 @@
 
 var IntroCtrl=function($scope) {
 	var scrollIndex = 1;
+	// 分辨率检测，宽度低于700px，即移动端暂时无效
+	var resolutionDetection = function() {
+		if($(window).width() < 700) {
+			window.location.href="../invalid.html";
+		}
+	}
+
 	$scope.jump = function(index) {
 		if ($(".page"+index).offset()!=undefined) {
 			scrollIndex=index;
@@ -66,7 +73,6 @@ var IntroCtrl=function($scope) {
 			_self.addScrollListener();
 		}
 	}
-	mywheel.init();
     /*加载页面动画*/
 	$scope.loadAnimate = {
 		addPageAnimate:function() {
@@ -144,6 +150,8 @@ var IntroCtrl=function($scope) {
 			window.open("http://www.h3c.com");
 		}
 	}
+	resolutionDetection();
+	mywheel.init();
 }
 
 angApp
