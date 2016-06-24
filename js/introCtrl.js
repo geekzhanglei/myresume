@@ -98,16 +98,15 @@ var IntroCtrl=function($scope) {
 						// 闭包和异步的问题
 						setTimeout((function(i){return function(){
 							$scope.loadAnimate.addClass('.page2 div ul li i',arr[i],'fadeInLeft');
-						}})(i), 500*i);
+						}})(i), 600*i);
 						setTimeout((function(i){return function(){
 							$scope.loadAnimate.addClass('.page2 div ul li span',arr[i],'fadeInRight')
-						}})(i), 500*i);
+						}})(i), 600*i);
 					} 
 					break;
 				case 3:
 					var arr = $scope.loadAnimate.randomArr(2);
 					setTimeout((function(){return function(){
-					console.log(arr);
 						$scope.loadAnimate.addClass('.page3 .right .item',arr[0],'animatePage3');
 					}})(), 600);
 					setTimeout((function(){return function(){

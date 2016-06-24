@@ -125,6 +125,10 @@
 	.nav-toTop ul li[class=label] {
 		margin-top: -3%;
 	}
+	.page3 .right .content span:first-child {
+		font-size: 1.5em;
+		margin: 0.4em 0 1em 1em;
+	}	
 	.page3 .content {
 		margin-top: -14%;
 	}

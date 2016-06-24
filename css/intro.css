@@ -221,26 +221,21 @@ nav a {
 	left:25%;
 }
 .page2 li span {
+	position: relative;
 	display:inline-block;
 	color: black;
 	font-weight: bold;
     line-height: 60px;
     font-size: 30px;
     opacity:0;
-    transition:all ease-in 1s;
-	-moz-transition: all ease-in 1s; /* Firefox 4 */
-	-webkit-transition: all ease-in 1s; /* Safari 和 Chrome */
-	-o-transition: all ease-in 1s; /* Opera */	    
+
 }
 .page2 li i {
     color: #009966;
     font-size: 40px;
     margin:0 20px;
     opacity: 0;
-    transition:all ease-in 1s;
-	-moz-transition: all ease-in 1s; /* Firefox 4 */
-	-webkit-transition: all ease-in 1s; /* Safari 和 Chrome */
-	-o-transition: all ease-in 1s; /* Opera */	
+
 }
 /*page3*/
 .page3 {
