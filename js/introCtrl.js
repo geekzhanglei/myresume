@@ -12,8 +12,8 @@ var IntroCtrl=function($scope) {
 	$scope.jump = function(index) {
 		if ($(".page"+index).offset()!=undefined) {
 			scrollIndex=index;
-			// console.log(scrollIndex);
-			$("body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
+			// var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+			$("html,body").animate({scrollTop:$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
 			$scope.loadAnimate.addPageAnimate();//加载页面动画
 		}
 	}
@@ -22,7 +22,7 @@ var IntroCtrl=function($scope) {
 			return;
 		}
 		scrollIndex++;
-		$("body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
+		$("html,body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
 		$scope.loadAnimate.addPageAnimate();
 	}
 	/*鼠标滚轮事件*/
@@ -50,18 +50,18 @@ var IntroCtrl=function($scope) {
 			if(e.wheelDelta){
 				dictValue=e.wheelDelta;
 			}else if(e.detail){//FireFox
-				dictValue=e.detail;
+				dictValue=-e.detail;
 			}
 			// console.log(dictValue);
 			if(dictValue<0){
 				if(scrollIndex<$("div[class*=page]").length){
 					scrollIndex++;
-					$("body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
+					$("html,body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
 				}
 			}else{
 				if(scrollIndex>1){
 					scrollIndex--;
-					$("body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
+					$("html,body").animate({"scrollTop":$(".page"+scrollIndex).offset().top},{duration:600},{easing:"easeOutSine"});
 				}
 			}
 			mywheel.removeScrollListener();
