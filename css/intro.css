@@ -288,7 +288,7 @@ nav a {
     overflow: hidden !important;
     transition: all .5s ease-in;
     -moz-transition: all .5s ease-in; /* Firefox 4 */
--webkit-transition:all .5s ease-in;
+	-webkit-transition:all .5s ease-in;
 	-o-transition: all .5s ease-in; /* Opera */	
     transform:rotateX(30deg);
     transform-origin:50% 20%;
