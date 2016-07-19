@@ -251,8 +251,12 @@
 	.nav a {
 		padding: 25px 0;
 	}
-	.toHome img,.nav li {
+	.toHome img {
 		width:60px;
+	}
+	.nav li {
+		position: fixed;
+		width: 60px;
 	}
 	.toHome,.toHome span {
 		width:60px;
@@ -273,6 +277,9 @@
 	.page4 ul li {
 	    font-size: 15px;
 	    line-height: 25px;
+	}
+	.page4 div:first-child {
+		top:110px;
 	}
 }
 @media(max-width: 500px) {
