@@ -241,3 +241,42 @@
 		left:20%;
 	}
 }
+@media(max-width: 700px) {
+	.header .nav .label {
+		display: none;
+	}
+	.nav a {
+		padding: 25px 0;
+	}
+	.toHome img,.nav li {
+		width:60px;
+	}
+	.toHome,.toHome span {
+		width:60px;
+		height: 60px;
+	}
+	.toHome {
+/*		left:10px;*/
+	}
+	.page1 p {
+		font-size: 20px;
+	}
+	.page .wrap {
+		width:80%;
+	}
+	.page2 li i {
+		font-size: 30px;
+	}
+	.page2 li span {
+		font-size: 20px;
+	}
+	.page4 ul li {
+	    font-size: 15px;
+	    line-height: 30px;
+	}
+}
+@media(max-width: 500px) {
+	.page2 ul {
+		left:0;
+	}
+}

@@ -2,9 +2,9 @@
 
 var IntroCtrl = function($scope) {
 	var scrollIndex = 1;
-	// 分辨率检测，宽度低于700px，即移动端暂时无效
+	// 分辨率检测，宽度低于300px，分辨率过低转无效页
 	var resolutionDetection = function() {
-		if ($(window).width() < 700) {
+		if ($(window).width() < 300) {
 			window.location.href = "../invalid.html";
 		}
 	}
