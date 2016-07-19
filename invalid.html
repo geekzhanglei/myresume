@@ -15,19 +15,19 @@
 	</head>
 	<body>
 		<div class="content">
-			<p><i class="fa fa-anchor"></i> 抱歉，网页没有正常显示，可能的原因有：</p>
+			<p><i class="fa fa-anchor"></i> 抱歉，网页无法显示：</p>
 			<ul>
-				<li><i class="fa fa-hand-o-right"></i> 我没做移动端(屏幕宽度小于700)适配</li>
-				<li><i class="fa fa-hand-o-right"></i> 当前网页浏览器窗口宽度小于700，请调大后刷新</li>
+				<li><i class="fa fa-hand-o-right"></i> 我没做适配(屏宽小于300)</li>
+				<li><i class="fa fa-hand-o-right"></i> 网页浏览器窗口宽度小于300，请调大后刷新</li>
 			</ul>
 			<div class="weather">
-				<iframe width="420" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=1&num=4"></iframe>
+				<iframe width="200" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=1&num=1"></iframe>
 			</div>
 		</div>
 		<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 		<script>
 				var resolutionDetection = function() {
-					if($(window).width() > 700) {
+					if($(window).width() > 300) {
 						window.location.href="/index.html";
 					}
 				}

@@ -281,6 +281,15 @@
 	.page4 div:first-child {
 		top:110px;
 	}
+	.page3 .item {
+		box-shadow: none;
+	}
+	.page3 img {
+		display: none;
+	}
+	.page3 .content {
+		position: inherit;
+	}
 }
 @media(max-width: 500px) {
 	.page2 ul {
