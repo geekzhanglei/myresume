@@ -285,7 +285,7 @@
 		box-shadow: none;
 	}
 	.page3 img {
-		opacity: 0;
+		/*opacity: 0;*/
 	}
 	.page3 .content {
 		display: block;
