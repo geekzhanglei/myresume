@@ -322,14 +322,17 @@
 	.page2 ul {
 		left:0;
 	}
+	.page .wrap {
+		width:95%;
+	}
+	.page3 .content span:first-child{
+		margin:0.5em;
+	}
 	.page3 .right .content span:first-child {
 		margin:0.4em;
 		font-size: 10px;
 	}
 	.page3 .right .content span {
 		margin-left: 0.5em;
-	}
-	.page3 .content {
-    	margin-top: -25%;
 	}
 }
