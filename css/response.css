@@ -245,6 +245,10 @@
 	.page2 li span,.page2 li i {
 		opacity: 1;
 	}
+	.page3 .content {
+		background-color: black;
+		opacity: 0.8;
+	}
 	.nav-bg-effect {
 		display: none !important;
 	}
