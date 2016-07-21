@@ -313,17 +313,17 @@ nav a {
 	position: absolute;
 	height: 100%;
 	padding:20px;
-    /*background: rgba(0,0,0,0.8);*/
+    background: rgba(0,0,0,0.8);
     color: white;
     width: 100%;
     margin-top: -17%;
-/*    z-index: 99;
+    z-index: 99;
     transform-origin:50% 20%;
     box-sizing: border-box;
     transition: all 0.5s ease-in;
     -moz-transition: all .5s ease-in; /* Firefox 4 */
 	-webkit-transition: all .5s ease-in; /* Safari 和 Chrome */
-	-o-transition: all .5s ease-in; /* Opera */	 */   
+	-o-transition: all .5s ease-in; /* Opera */	    
     /*transform: translate(0%,0%);*/
     cursor: pointer;
 }
