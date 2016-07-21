@@ -160,7 +160,7 @@ nav a {
 	cursor:pointer;
 }
 .next-button:hover {
-	opacity: .6;
+	opacity: .6!important;
 }
 .go_top {
 	position: fixed;

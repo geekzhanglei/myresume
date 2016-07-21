@@ -10,6 +10,9 @@ var IntroCtrl = function($scope) {
 	}
 
 	$scope.jump = function(index) {
+		if (index == 1) {
+			
+		}
 		if ($(".page" + index).offset() != undefined) {
 			scrollIndex = index;
 			// var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
@@ -35,7 +38,7 @@ var IntroCtrl = function($scope) {
 			}, {
 				easing: "easeOutSine"
 			});
-			$scope.loadAnimate.addPageAnimate();
+			$scope.loadAnimate.addPageAnimate(); //加载页面动画
 		}
 		/*鼠标滚轮事件*/
 	var mywheel = {
@@ -99,9 +102,26 @@ var IntroCtrl = function($scope) {
 				_self.addScrollListener();
 			}
 		}
-		/*加载页面动画*/
+	/*加载页面动画*/
 	$scope.loadAnimate = {
 			addPageAnimate: function() {
+				if ($(window).width() < 700) {
+					$(".go_top").animate({
+						right: "-100px"
+					}, 600);
+					$('.next-button').animate({
+						opacity: 1
+					}, 600);
+					if (scrollIndex == 5) {
+						$('.next-button').animate({
+							opacity: 0
+						}, 500);
+						$(".go_top").animate({
+							right: "20px"
+						}, 600);
+					}
+					return;	
+				}
 				// 导航字随翻页选中变色
 				$(".nav li a").removeClass('nav_shade2 nav_shade3 nav_shade4 nav_shade5');
 				$(".nav li a[value=" + scrollIndex + "]").addClass("nav_shade" + scrollIndex);
