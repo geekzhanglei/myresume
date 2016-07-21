@@ -180,7 +180,7 @@ var IntroCtrl = function($scope) {
 						break;
 					case 5:
 						$('.next-button').animate({
-							opacity: 0
+							opacity: 0 
 						}, 500);
 						$(".go_top").animate({
 							right: "20px"
