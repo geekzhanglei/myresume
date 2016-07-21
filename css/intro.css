@@ -159,9 +159,9 @@ nav a {
 	bottom:10px;
 	cursor:pointer;
 }
-/*.next-button:hover {
-	opacity: .6 !important;
-}*/
+.next-button:hover {
+	opacity: 0.6!important;
+}
 .go_top {
 	position: fixed;
 	margin:auto;

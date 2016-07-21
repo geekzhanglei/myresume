@@ -8,12 +8,6 @@ var IntroCtrl = function($scope) {
 			window.location.href = "../invalid.html";
 		}
 	}
-				$(".next-button").hover(function() {
-				$('.next-button').css("opacity", "0.6");
-			}, function() {
-				// console.log(scrollIndex)
-				$('.next-button').css("opacity", "1");
-			})
 	$scope.jump = function(index) {
 		if (index == 1) {
 
@@ -110,6 +104,7 @@ var IntroCtrl = function($scope) {
 		/*加载页面动画*/
 	$scope.loadAnimate = {
 			addPageAnimate: function() {
+				// 移动端不加载动画
 				if ($(window).width() < 700) {
 					$(".go_top").animate({
 						right: "-100px"
@@ -127,6 +122,17 @@ var IntroCtrl = function($scope) {
 					}
 					return;
 				}
+				// next-button的hover效果
+				var jshow = function() {
+					$(".next-button").show();
+				}
+				var jhide = function() {
+					$(".next-button").hide();
+				}
+				setTimeout(jshow,600);
+				if (scrollIndex == 5) {
+					setTimeout(jhide,600);
+				} 
 				// 导航字随翻页选中变色
 				$(".nav li a").removeClass('nav_shade2 nav_shade3 nav_shade4 nav_shade5');
 				$(".nav li a[value=" + scrollIndex + "]").addClass("nav_shade" + scrollIndex);

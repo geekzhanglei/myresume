@@ -11,22 +11,6 @@ var adaptiveHeight = function() {
 			}
 		}
 	}
-	// button hover effect
-var buttonHover = function() {
-	return {
-		restrict: 'A',
-		link: function() {
-			$(".next-button").hover(function() {
-				$('.next-button').css("opacity", "0.6");
-			}, function() {
-				// console.log(scrollIndex)
-				$('.next-button').css("opacity", "1");
-			})
-		}
-	}
-}
-
 
 angApp
 	.directive('adaptiveHeight', adaptiveHeight)
-	.directive('buttonHover', buttonHover)
