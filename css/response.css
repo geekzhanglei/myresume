@@ -290,9 +290,10 @@
 	}
 	.page3 .item {
 		box-shadow: none;
+		opacity:1;
 	}
 	.page3 img {
-		/*opacity: 0;*/
+		opacity: 0;
 	}
 	.page3 .content {
 		display: block;
