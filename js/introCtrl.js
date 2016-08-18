@@ -129,10 +129,10 @@ var IntroCtrl = function($scope) {
 				var jhide = function() {
 					$(".next-button").hide();
 				}
-				setTimeout(jshow,600);
+				setTimeout(jshow, 600);
 				if (scrollIndex == 5) {
-					setTimeout(jhide,600);
-				} 
+					setTimeout(jhide, 600);
+				}
 				// 导航字随翻页选中变色
 				$(".nav li a").removeClass('nav_shade2 nav_shade3 nav_shade4 nav_shade5');
 				$(".nav li a[value=" + scrollIndex + "]").addClass("nav_shade" + scrollIndex);

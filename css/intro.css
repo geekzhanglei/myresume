@@ -399,7 +399,7 @@ nav a {
 .page5 div:first-child {
 	position: absolute;
 	bottom:initial;
-	top:150px;
+	top:125px;
 	margin:0 auto;
 }
 .page5 div>div:nth-child(2) {
