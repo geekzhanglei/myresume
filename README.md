@@ -4,7 +4,7 @@
 有关说明
 -----------------------------------
 ###仓库
-这是一个bitbucket的副本代码仓库
+bitbucket（主）;同步至github（副;交流作用）
 ###站点
 基于腾讯云VPS
 angular1搭建框架，用到jquery和font Awesome图标
