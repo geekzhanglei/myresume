@@ -1,0 +1,26 @@
+{
+  "name": "zl-myresume",
+  "version": "1.0.0",
+  "description": "my first project ",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geekzhanglei/myresume.git"
+  },
+  "author": "zhanglei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/geekzhanglei/myresume/issues"
+  },
+  "homepage": "https://github.com/geekzhanglei/myresume#readme"
+}
