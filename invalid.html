@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>星辰大海-我的前端之路</title>
-		<link rel="icon" href="images/icon.ico" type="image/x-icon"/>
-		<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon"/>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name="keywords" content="星辰大海 前端之路的起点 在线简历"/>
-		<meta name="description" content="星辰大海-我的前端之路">
-		<link rel="stylesheet" href="css/invalid.css">
-		<!-- build css pkg -->
-		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-		<!-- endbuild -->
-	</head>
-	<body>
-		<div class="content">
-			<p><i class="fa fa-anchor"></i> 抱歉，网页无法显示：</p>
-			<ul>
-				<li><i class="fa fa-hand-o-right"></i> 我没做适配(屏宽小于300)</li>
-				<li><i class="fa fa-hand-o-right"></i> 网页浏览器窗口宽度小于300，请调大后刷新</li>
-			</ul>
-			<div class="weather">
-				<iframe width="200" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=1&num=1"></iframe>
-			</div>
-		</div>
-		<script src="/node_modules/jquery/dist/jquery.min.js" defer></script>
-		<script>
-				var resolutionDetection = function() {
-					if($(window).width() > 300) {
-						window.location.href="index.html";
-					}
-				}
-				resolutionDetection();
-		</script>
 
-	</body>
+<head>
+	<title>星辰大海-我的前端之路</title>
+	<link rel="icon" href="images/icon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="keywords" content="星辰大海 前端之路的起点 在线简历" />
+	<meta name="description" content="我好像是一个在海边玩耍的孩子，不时为拾到比通常更光滑的石子或更美丽的贝壳而欢欣鼓舞，而展现在我面前的是无尽的真理之海。前端的星辰大海面前，我只是个海边玩耍的孩子，这是前端之路的开始，我们的目标是没有蛀牙，不，是星辰大海哦">
+	<meta itemprop="image" content="images/des.png">
+	<link rel="stylesheet" href="css/invalid.css">
+	<!-- build css pkg -->
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<!-- endbuild -->
+</head>
+
+<body>
+	<div class="content">
+		<p>
+			<i class="fa fa-anchor"></i> 抱歉，网页无法显示：</p>
+		<ul>
+			<li>
+				<i class="fa fa-hand-o-right"></i> 我没做适配(屏宽小于300)</li>
+			<li>
+				<i class="fa fa-hand-o-right"></i> 网页浏览器窗口宽度小于300，请调大后刷新</li>
+		</ul>
+		<div class="weather">
+			<iframe width="200" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&id=12&color=%23FFFFFF&icon=1&num=1"></iframe>
+		</div>
+	</div>
+	<script src="/node_modules/jquery/dist/jquery.min.js" defer></script>
+	<script>
+		var resolutionDetection = function () {
+			if ($(window).width() > 300) {
+				window.location.href = "index.html";
+			}
+		}
+		resolutionDetection();
+	</script>
+
+</body>
+
 </html>
