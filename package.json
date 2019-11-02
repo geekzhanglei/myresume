@@ -7,7 +7,7 @@
     "angular": "^1.5.7",
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.3",
-    "jquery": "^2.2.4"
+    "jquery": "^3.4.1"
   },
   "devDependencies": {},
   "scripts": {
